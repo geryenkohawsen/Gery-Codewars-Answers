@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MultiplyTest {
 
     @Test
-    void testSomething() {
+    void testMultiply() {
         assertEquals(1, Multiply.multiply(1.0, 1.0));
         assertEquals(4, Multiply.multiply(2.0, 2.0));
         assertEquals(4, Multiply.multiply(1.0, 4.0));
