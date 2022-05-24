@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ClockTest {
 
     @Test
-    public void testClock(){
+    public void testPast(){
         assertEquals(61000, Clock.Past(0,1,1));
         assertEquals(26028000, Clock.Past(7, 13, 48));
     }

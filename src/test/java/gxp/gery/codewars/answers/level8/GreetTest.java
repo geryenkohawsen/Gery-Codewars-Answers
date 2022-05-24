@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GreetTest {
 
     @Test
-    void basicTests() {
+    void testGreet() {
         assertEquals("Hello boss", Greet.greet("Gery", "Gery"));
         assertEquals("Hello guest", Greet.greet("Ikarashi", "Gery"));
         assertEquals("Hello guest", Greet.greet("Higashi", "Gery"));

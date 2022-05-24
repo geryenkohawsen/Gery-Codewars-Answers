@@ -8,9 +8,9 @@ public class EvenOrOddTest {
 
     @Test
     public void testEvenOrOdd() {
-        assertEquals("Even", EvenOrOdd.even_or_odd(6));
-        assertEquals("Odd", EvenOrOdd.even_or_odd(7));
-        assertEquals("Even", EvenOrOdd.even_or_odd(0));
-        assertEquals("Odd", EvenOrOdd.even_or_odd(-1));
+        assertEquals("Even", EvenOrOdd.evenOrOdd(6));
+        assertEquals("Odd", EvenOrOdd.evenOrOdd(7));
+        assertEquals("Even", EvenOrOdd.evenOrOdd(0));
+        assertEquals("Odd", EvenOrOdd.evenOrOdd(-1));
     }
 }
