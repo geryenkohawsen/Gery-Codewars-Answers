@@ -7,14 +7,30 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RemoveCharsTest {
 
     @Test
-    public void testRemoval() {
+    public void testRemoveChars() {
         assertEquals("eryenk", RemoveChars.remove("geryenko"));
         assertEquals("AWSE", RemoveChars.remove("HAWSEN"));
+    }
+
+    @Test
+    public void testRemoveWhitespaces() {
         assertEquals("hitespace", RemoveChars.remove("    whitespaces      "));
-        assertEquals("test2", RemoveChars.remove("1test23"));
-        assertEquals("$%&'()", RemoveChars.remove("#$%&'()~"));
-        assertEquals("中さ", RemoveChars.remove("田中さん"));
+    }
+
+    @Test
+    public void testRemoveNumbers() {
+        assertEquals("23", RemoveChars.remove("1234"));
         assertEquals("２", RemoveChars.remove("１２３"));
+    }
+
+    @Test
+    public void testRemoveSpecialChars() {
+        assertEquals("$%&'()", RemoveChars.remove("#$%&'()~"));
+    }
+
+    @Test
+    public void testRemoveDifferentLanguages() {
+        assertEquals("中さ", RemoveChars.remove("田中さん"));
         assertEquals("ожете передат", RemoveChars.remove("можете передать"));
     }
 }
