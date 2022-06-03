@@ -11,5 +11,8 @@ public class ReversedStringsTest {
         assertEquals("dlrow", ReversedStrings.reverseStrings("world"));
         assertEquals("hi", ReversedStrings.reverseStrings("ih"));
         assertEquals("321", ReversedStrings.reverseStrings("123"));
+        assertEquals("  ", ReversedStrings.reverseStrings("  "));
+        assertEquals("", ReversedStrings.reverseStrings(""));
+        assertEquals("1  ", ReversedStrings.reverseStrings("  1"));
     }
 }
