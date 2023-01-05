@@ -7,3 +7,11 @@ function updateLight(current) {
 		? 'green'
 		: 'Traffic light is broken... 😫';
 }
+
+// // using object property
+// const updateLight = (current) =>
+// 	({
+// 		green: 'yellow',
+// 		yellow: 'red',
+// 		red: 'green',
+// 	}[current]);
